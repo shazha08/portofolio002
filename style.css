@@ -1,0 +1,234 @@
+/* =============================== */
+/* RESET DASAR */
+/* Menghilangkan style bawaan browser */
+/* =============================== */
+* {
+  margin: 0; /* Menghapus margin default */
+  padding: 0; /* Menghapus padding default */
+  box-sizing: border-box; /* Mengatur box model agar rapi */
+  font-family: "Segoe UI", sans-serif; /* Font modern & mudah dibaca */
+}
+
+/* =============================== */
+/* VARIABEL WARNA */
+/* =============================== */
+/* =============================== */
+/* =============================== */
+/* WARNA PASTEL ESTETIK */
+/* =============================== */
+:root {
+  --teal: #7FC8C2;     /* Teal pastel (nav & footer) */
+  --cream: #FFF6E5;    /* Cream lembut (background utama) */
+  --pink: #F6B1C3;     /* Pink pastel (tombol & hover) */
+  --blue: #CDE7F0;     /* Biru muda pastel (section proyek) */
+  --purple: #D6CDEA;   /* Ungu pastel (judul & medsos) */
+  --dark: #3A3A3A;     /* Warna teks lembut */
+  --white: #FFFFFF;   /* Putih */
+}
+
+}
+
+/* =============================== */
+/* BODY */
+/* =============================== */
+body {
+  background-color: var(--cream); /* Background halaman */
+  color: var(--dark); /* Warna teks utama */
+  line-height: 1.6; /* Jarak antar baris */
+}
+
+/* =============================== */
+/* NAVIGASI */
+/* =============================== */
+header {
+  background-color: var(--teal); /* Background header */
+}
+
+/* Area navigasi */
+nav {
+  display: flex; /* Membuat isi sejajar horizontal */
+  justify-content: space-between; /* Logo kiri, menu kanan */
+  align-items: center; /* Tengah secara vertikal */
+  padding: 20px 60px; /* Jarak dalam */
+}
+
+/* Logo website */
+.logo {
+  font-size: 24px; /* Ukuran teks logo */
+  font-weight: bold; /* Tebal */
+  color: var(--white); /* Warna putih */
+}
+
+/* Aksen pada logo */
+.logo span {
+  color: var(--pink); /* Warna pink */
+}
+
+/* List menu */
+nav ul {
+  list-style: none; /* Hilangkan bullet */
+  display: flex; /* Menu sejajar */
+  gap: 30px; /* Jarak antar menu */
+}
+
+/* Link menu */
+nav ul li a {
+  text-decoration: none; /* Hilangkan garis bawah */
+  color: var(--white); /* Warna teks */
+  font-weight: 500; /* Ketebalan sedang */
+}
+
+/* Hover menu */
+nav ul li a:hover {
+  color: var(--pink); /* Ganti warna saat hover */
+}
+
+/* =============================== */
+/* HERO SECTION */
+/* =============================== */
+.hero {
+  min-height: 90vh; /* Tinggi hampir satu layar */
+  display: flex; /* Flexbox */
+  align-items: center; /* Tengah vertikal */
+  justify-content: space-between; /* Teks & gambar */
+  padding: 0 60px; /* Jarak kiri kanan */
+  background: linear-gradient(
+    to right,
+    var(--blue),
+    var(--purple)
+  ); /* Gradasi lembut */
+}
+
+/* Konten teks hero */
+.hero-content {
+  max-width: 500px; /* Lebar maksimal teks */
+}
+
+/* Judul hero */
+.hero h1 {
+  font-size: 48px; /* Ukuran besar */
+  margin: 15px 0; /* Jarak atas bawah */
+}
+
+/* Tombol hero */
+.btn-hero {
+  display: inline-block; /* Agar bisa diberi padding */
+  margin-top: 20px; /* Jarak atas */
+  padding: 12px 28px; /* Ukuran tombol */
+  background-color: var(--pink); /* Background tombol */
+  color: var(--white); /* Warna teks */
+  text-decoration: none; /* Hilangkan underline */
+  border-radius: 25px; /* Membulat */
+}
+
+/* Hover tombol */
+.btn-hero:hover {
+  background-color: var(--teal); /* Ganti warna saat hover */
+}
+
+/* Gambar hero */
+.hero-logo img {
+  width: 300px; /* Ukuran gambar */
+}
+
+/* =============================== */
+/* CONTAINER */
+/* =============================== */
+.container {
+  padding: 80px 60px; /* Jarak antar section */
+}
+
+/* =============================== */
+/* ABOUT */
+/* =============================== */
+.about {
+  background-color: var(--white); /* Background putih */
+}
+
+/* Judul section */
+.about h2 {
+  font-size: 32px; /* Ukuran judul */
+  margin-bottom: 20px; /* Jarak ke konten */
+  color: var(--purple); /* Warna ungu */
+}
+
+/* =============================== */
+/* PROYEK */
+/* =============================== */
+.proyek {
+  background-color: var(--blue); /* Background biru muda */
+}
+
+/* Grid proyek */
+.proyek-grid {
+  display: grid; /* Menggunakan CSS Grid */
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom sejajar */
+  gap: 30px; /* Jarak antar kartu */
+  margin-top: 40px; /* Jarak atas */
+}
+
+/* Kartu proyek */
+.proyek-card {
+  background-color: var(--white); /* Background kartu */
+  border-radius: 15px; /* Sudut membulat */
+  overflow: hidden; /* Potong isi berlebih */
+  text-decoration: none; /* Hilangkan underline */
+  color: var(--dark); /* Warna teks */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Bayangan lembut */
+  transition: transform 0.3s; /* Animasi halus */
+}
+
+/* Hover kartu */
+.proyek-card:hover {
+  transform: translateY(-8px); /* Kartu naik sedikit */
+}
+
+/* Gambar proyek */
+.proyek-card img {
+  width: 100%; /* Lebar penuh */
+  display: block; /* Hilangkan spasi bawah */
+}
+
+/* Info proyek */
+.proyek-info {
+  padding: 15px; /* Jarak dalam */
+}
+
+/* =============================== */
+/* MEDSOS */
+/* =============================== */
+.medsos {
+  background-color: var(--purple); /* Background ungu */
+  text-align: center; /* Tengah */
+}
+
+/* List medsos */
+.medsos-list {
+  display: flex; /* Sejajar */
+  justify-content: center; /* Tengah */
+  gap: 30px; /* Jarak antar item */
+  margin-top: 30px; /* Jarak atas */
+}
+
+/* Item medsos */
+.medsos-item {
+  text-decoration: none; /* Hilangkan underline */
+  color: var(--white); /* Warna teks */
+}
+
+/* Icon medsos */
+.medsos-item img {
+  width: 50px; /* Ukuran icon */
+  display: block; /* Baris sendiri */
+  margin: 0 auto 10px; /* Tengah */
+}
+
+/* =============================== */
+/* FOOTER */
+/* =============================== */
+footer {
+  background-color: var(--teal); /* Background footer */
+  color: var(--white); /* Warna teks */
+  text-align: center; /* Tengah */
+  padding: 20px; /* Jarak dalam */
+}
